@@ -22,6 +22,7 @@ window.addEventListener("scroll", () => {
   activeMenuAtCurrentSection(services);
   activeMenuAtCurrentSection(about);
   activeMenuAtCurrentSection(contact);
+  activeMenuAtCurrentSection(depositions);
 });
 
 openButton.addEventListener("click", () => {
