@@ -170,6 +170,9 @@ img {
   z-index: -1;
 }
 
+/* =========================== NAVIGATION ============================ */
+
+
 #navigation {
   display: flex;
   flex-direction: row;
@@ -820,7 +823,7 @@ body.menu-expanded #navigation .logo path[fill="#00856F"] {
     flex-grow: 1;
   }
 
-  /* =========================== SERVICES ============================ */
+  /* =========================== ABOUT ============================ */
 
   #about .wrapper {
     grid-template-columns: 48rem 1fr;
@@ -855,7 +858,7 @@ body.menu-expanded #navigation .logo path[fill="#00856F"] {
     width: 30.4rem;
   }
 
-  /* =========================== CONTACT ============================ */
+  /* =========================== FOOTER ============================ */
 
   #footer {
     padding-block: 8rem;
