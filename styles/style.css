@@ -913,6 +913,27 @@ body.menu-expanded #navigation .logo path[fill="#00856F"] {
     flex-grow: 1;
   }
 
+  /* =========================== DEPOSITIONS ============================ */
+
+  #depositions header {
+    margin-inline: auto;
+  }
+
+  #depositions .cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B";
+  }
+
+  #depositions .col-a {
+    grid-area: A;
+  }
+
+  #depositions .col-b {
+    grid-area: B;
+  }
+
   /* =========================== ABOUT ============================ */
 
   #about .wrapper {
