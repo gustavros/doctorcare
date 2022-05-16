@@ -13,7 +13,7 @@
 }
 
 :root {
-  --hue: 80;
+  --hue: 320;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -97,7 +97,7 @@ img {
   font-weight: 700;
   color: white;
 
-  width: 26.3rem;
+  max-width: 26.7rem;
   height: 5.2rem;
 
   border: none;
@@ -105,6 +105,7 @@ img {
   background-color: var(--primary-color);
 
   margin-bottom: 6.1rem;
+  padding: 1rem;
 
   cursor: pointer;
   transition: 100ms ease;
@@ -171,7 +172,6 @@ img {
 }
 
 /* =========================== NAVIGATION ============================ */
-
 
 #navigation {
   display: flex;
@@ -318,6 +318,11 @@ body.menu-expanded .menu .social-links {
   gap: 3.2rem;
 }
 
+body.menu-expanded #backToTop.show {
+  opacity: 0;
+  visibility: hidden;
+}
+
 @keyframes opacity-in {
   0% {
     opacity: 0;
@@ -416,6 +421,87 @@ body.menu-expanded .menu .social-links {
   color: var(--headline);
 }
 
+/* =========================== DEPOSITIONS ============================ */
+
+#depositions {
+  text-align: left;
+}
+
+#depositions header {
+  margin-bottom: 6.7rem;
+}
+
+#depositions header h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: var(--primary-color);
+}
+
+#depositions header h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: var(--headline);
+
+  margin-block: 1.6rem 2.4rem;
+
+  max-width: 48.1rem;
+}
+
+#depositions header p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--paragraph);
+}
+
+#depositions .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#depositions .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+  background-color: white;
+
+  padding: 3.2rem;
+}
+
+#depositions .cards .card .card-profiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#depositions .cards .card .card-profiles h4 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+
+  color: var(--primary-color);
+}
+
+#depositions .col-a {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#depositions .col-b {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
 /* =========================== ABOUT ============================ */
 
 #about {
@@ -505,7 +591,7 @@ body.menu-expanded .menu .social-links {
   justify-content: center;
   gap: 1.6rem;
 
-  width: 26.7rem;
+  max-width: 26.7rem;
   height: 5.6rem;
 
   transition: 100ms ease;
@@ -577,6 +663,10 @@ body.menu-expanded .menu .social-links {
 
 #services .card path {
   stroke: var(--primary-color);
+}
+
+#depositions .cards .card path[fill="#00856F"] {
+  fill: var(--primary-color);
 }
 
 #navigation .logo path[fill="#00856F"] {
