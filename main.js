@@ -1,12 +1,12 @@
-import closeMenuOnClick from "./modules/closeMenuOnClick.js";
-import openAndCloseMenu from "./modules/openAndCloseMenu.js";
 import scrollOnWindow from "./modules/scrollOnWindow.js";
+import openAndCloseMenu from "./modules/openAndCloseMenu.js";
+import closeMenuOnClick from "./modules/closeMenuOnClick.js";
 import showButtonToTop from "./modules/showButtonToTop.js";
 
 scrollOnWindow();
-showButtonToTop();
 openAndCloseMenu();
 closeMenuOnClick();
+showButtonToTop();
 
 ScrollReveal({
   origin: "top",
